@@ -1,2 +1,2 @@
-# fighternet_super_trump
+# JetFighter_super_trump
 A cool Python game for Super Trump Lovers 
