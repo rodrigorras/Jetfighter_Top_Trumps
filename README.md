@@ -1,2 +1,2 @@
-# JetFighter_super_trump
-A cool Python game for Super Trump Lovers 
+# JetFighter_Super_Triumph
+A cool Python game for Super Triumph Lovers 
