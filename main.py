@@ -1,6 +1,7 @@
 class JetFighter:
-    def __init__(self, cost_per_unit, thrust_weight, maximum_speed, maximum_range, combat_radius, roll_rate,
+    def __init__(self, name, cost_per_unit, thrust_weight, maximum_speed, maximum_range, combat_radius, roll_rate,
                  flight_ceiling, max_payload, number_engines):
+        self.name = name
         self.cost_per_unit = cost_per_unit
         self.thrust_weight = thrust_weight
         self.maximum_speed = maximum_speed
@@ -12,20 +13,21 @@ class JetFighter:
         self.number_engines = number_engines
 
     def __repr__(self):
-        rep = 'Fighter(' + self.name + ',' + str(self.age) + ')'
+        rep = 'Fighter(' + self.name + ',' + str(self.cost_per_unit) + ',' \
+              + str(self.thrust_weight) + ',' + str(self.maximum_speed) + ',' \
+              + str(self.maximum_range) + ',' + str(self.combat_radius) + ',' \
+              + str(self.roll_rate) + ',' + str(self.flight_ceiling) + ',' \
+              + str(self.max_payload) + ',' + str(self.number_engines) + ')'
         return rep
-
 
     def shuffle_cards(self):
         pass
-
 
     def set_of_cards(self, List_of_Players):
         # Return An Equal amount of cards per user player
         pass
 
-
-    def card_comparison_result(self, JetFighter, choosen_parameter, List_of_players ):
+    def card_comparison_result(self, JetFighter, choosen_parameter, List_of_players):
         # Return the winner of the Round
 
         if not isinstance(self, JetFighter):
@@ -33,26 +35,11 @@ class JetFighter:
             pass
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-F14_tomcat = JetFighter("38 million", 0.88, "2485 km/h", "2960 Km", "960 Km", 720, "15500m", "6700 Kg", 2)
+F14_tomcat = JetFighter("F-14","38 million", 0.88, "2485 km/h", "2960 Km", "960 Km", 720, "15500m", "6700 Kg", 2)
 # F16_falcon = JetFighter("64 million"),1.096, "2531,34",
 
 
-
-
 if __name__ == '__main__':
+    print(F14_tomcat.__repr__())
     print("F14 Speed = ", F14_tomcat.maximum_speed)
 
