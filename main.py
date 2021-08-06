@@ -11,6 +11,10 @@ class JetFighter:
         self.max_payload = max_payload
         self.number_engines = number_engines
 
+    def __repr__(self):
+        rep = 'Fighter(' + self.name + ',' + str(self.age) + ')'
+        return rep
+
 
     def shuffle_cards(self):
         pass
@@ -47,7 +51,7 @@ F14_tomcat = JetFighter("38 million", 0.88, "2485 km/h", "2960 Km", "960 Km", 72
 # F16_falcon = JetFighter("64 million"),1.096, "2531,34",
 
 
-JetFighter.__repr__()
+
 
 if __name__ == '__main__':
     print("F14 Speed = ", F14_tomcat.maximum_speed)
